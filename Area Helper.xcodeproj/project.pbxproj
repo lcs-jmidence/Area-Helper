@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		D355C6A02361441D0047F6FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355C69F2361441D0047F6FB /* AppDelegate.swift */; };
-		D355C6A22361441D0047F6FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355C6A12361441D0047F6FB /* ViewController.swift */; };
+		D355C6A22361441D0047F6FB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355C6A12361441D0047F6FB /* MainViewController.swift */; };
 		D355C6A52361441D0047F6FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D355C6A32361441D0047F6FB /* Main.storyboard */; };
 		D355C6A7236144300047F6FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D355C6A6236144300047F6FB /* Assets.xcassets */; };
 		D355C6AA236144300047F6FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D355C6A8236144300047F6FB /* LaunchScreen.storyboard */; };
+		D355C6B2236150BF0047F6FB /* RectangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355C6B1236150BF0047F6FB /* RectangleViewController.swift */; };
+		D355C6B4236155F20047F6FB /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355C6B3236155F20047F6FB /* CircleViewController.swift */; };
+		D355C6B6236156440047F6FB /* TriangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355C6B5236156440047F6FB /* TriangleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D355C69C2361441D0047F6FB /* Area Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Area Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D355C69F2361441D0047F6FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D355C6A12361441D0047F6FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D355C6A12361441D0047F6FB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D355C6A42361441D0047F6FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D355C6A6236144300047F6FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D355C6A9236144300047F6FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D355C6AB236144300047F6FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D355C6B1236150BF0047F6FB /* RectangleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleViewController.swift; sourceTree = "<group>"; };
+		D355C6B3236155F20047F6FB /* CircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
+		D355C6B5236156440047F6FB /* TriangleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				D355C69F2361441D0047F6FB /* AppDelegate.swift */,
-				D355C6A12361441D0047F6FB /* ViewController.swift */,
+				D355C6A12361441D0047F6FB /* MainViewController.swift */,
 				D355C6A32361441D0047F6FB /* Main.storyboard */,
 				D355C6A6236144300047F6FB /* Assets.xcassets */,
 				D355C6A8236144300047F6FB /* LaunchScreen.storyboard */,
 				D355C6AB236144300047F6FB /* Info.plist */,
+				D355C6B1236150BF0047F6FB /* RectangleViewController.swift */,
+				D355C6B3236155F20047F6FB /* CircleViewController.swift */,
+				D355C6B5236156440047F6FB /* TriangleViewController.swift */,
 			);
 			path = "Area Helper";
 			sourceTree = "<group>";
@@ -135,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D355C6A22361441D0047F6FB /* ViewController.swift in Sources */,
+				D355C6A22361441D0047F6FB /* MainViewController.swift in Sources */,
+				D355C6B2236150BF0047F6FB /* RectangleViewController.swift in Sources */,
+				D355C6B4236155F20047F6FB /* CircleViewController.swift in Sources */,
+				D355C6B6236156440047F6FB /* TriangleViewController.swift in Sources */,
 				D355C6A02361441D0047F6FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
