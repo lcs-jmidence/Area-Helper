@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TriangleViewController: UIViewController {
+class RectangleViewController: UIViewController {
     
     @IBOutlet weak var submittedBase: UITextField!
     @IBOutlet weak var submittedHeight: UITextField!
@@ -16,11 +16,12 @@ class TriangleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        func areaOfTriangle(base: Double, height: Double) -> Double {
-            return (base/2) * height
+        func areaOfRectangle(length: Double, width: Double) -> Double {
+            return length * width
         }
     }
     
+
     
 }
 

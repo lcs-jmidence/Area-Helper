@@ -8,19 +8,18 @@
 
 import UIKit
 
-class TriangleViewController: UIViewController {
+class CircleViewController: UIViewController {
     
-    @IBOutlet weak var submittedBase: UITextField!
-    @IBOutlet weak var submittedHeight: UITextField!
     
+    @IBOutlet weak var submittedRadius: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        func areaOfTriangle(base: Double, height: Double) -> Double {
-            return (base/2) * height
+        func areaOfCircle(radius: Double) -> Double {
+            return Double.pi * pow(radius, 2)
         }
     }
     
     
+    
 }
-
