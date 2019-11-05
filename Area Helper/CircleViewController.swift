@@ -11,13 +11,19 @@ import UIKit
 class CircleViewController: UIViewController {
     
     
-    @IBOutlet weak var submittedRadius: UITextField!
+    @IBOutlet weak var submittedValue: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         func areaOfCircle(radius: Double) -> Double {
             return Double.pi * pow(radius, 2)
         }
+    }
+    //This functions will be used to calcuate the area with the given values
+    @IBAction func calculateValue(_ sender: Any) {
+        // Obtain the inputed values
+        let givenValue = submittedValue.text!
+        let calculateArea = Int(givenValue)!
     }
     
     

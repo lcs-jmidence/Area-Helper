@@ -26,14 +26,6 @@
                                     <segue destination="TRJ-TR-zdc" kind="show" id="mHQ-o1-X1h"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5r-I3-Aud">
-                                <rect key="frame" x="145" y="433" width="124" height="44"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Circle"/>
-                                <connections>
-                                    <segue destination="eks-8s-tZG" kind="show" id="4X2-N7-2LR"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7h-Ut-Esd">
                                 <rect key="frame" x="145" y="634" width="124" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -48,20 +40,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjw-IS-GuI">
+                                <rect key="frame" x="175" y="426" width="65" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Circle"/>
+                                <connections>
+                                    <segue destination="eks-8s-tZG" kind="show" id="xrl-cq-eyx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nDX-wf-IaU" secondAttribute="trailing" constant="145" id="0Bn-9b-JtU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f7h-Ut-Esd" secondAttribute="trailing" constant="145" id="0w3-4I-qVS"/>
-                            <constraint firstItem="p5r-I3-Aud" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="7jt-gf-5c8"/>
                             <constraint firstItem="f7h-Ut-Esd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="546" id="ApM-Yv-2T2"/>
                             <constraint firstItem="nDX-wf-IaU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="145" id="chB-2g-06P"/>
                             <constraint firstItem="nDX-wf-IaU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="fWU-l0-beh"/>
                             <constraint firstItem="qYV-0p-4bf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ggD-ba-TgK"/>
                             <constraint firstItem="f7h-Ut-Esd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="iox-Vg-I15"/>
                             <constraint firstItem="qYV-0p-4bf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ksb-Hd-v4G"/>
-                            <constraint firstItem="p5r-I3-Aud" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="345" id="qTq-MO-xkb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p5r-I3-Aud" secondAttribute="trailing" constant="145" id="s24-MI-63i"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -108,6 +106,9 @@
                                 <rect key="frame" x="174" y="433" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateValue:" destination="8jP-c5-IcV" eventType="touchUpInside" id="Xos-7l-gig"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -154,6 +155,7 @@
                                 <state key="normal" title="Calculate"/>
                                 <connections>
                                     <action selector="calculateArea:" destination="eks-8s-tZG" eventType="touchUpInside" id="R9h-ID-2XM"/>
+                                    <action selector="calculateValue:" destination="eks-8s-tZG" eventType="touchUpInside" id="qUb-MR-KbS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -205,6 +207,9 @@
                                 <rect key="frame" x="175" y="467" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateValue:" destination="TRJ-TR-zdc" eventType="touchUpInside" id="y9l-15-d1C"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -21,7 +21,16 @@ class RectangleViewController: UIViewController {
         }
     }
     
-
+    //This functions will be used to calcuate the area with the given values
+    @IBAction func calculateValue(_ sender: Any) {
+        // Obtain the inputed values
+        let firstValue = submittedBase.text!
+        let secondValue = submittedHeight.text!
+        let calculatedArea = Int(firstValue)! * Int(secondValue)!
+        // Testing to see what the calculated Area is
+        print("Testing the are which is \(calculatedArea)")
+    }
+    
     
 }
 

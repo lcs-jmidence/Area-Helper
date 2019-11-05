@@ -13,12 +13,19 @@ class TriangleViewController: UIViewController {
     @IBOutlet weak var submittedBase: UITextField!
     @IBOutlet weak var submittedHeight: UITextField!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         func areaOfTriangle(base: Double, height: Double) -> Double {
             return (base/2) * height
         }
+    }
+    // Obtain the inputed values
+    @IBAction func calculateValue(_ sender: Any) {
+        //let firstValue = submittedBase.text!
+        //let secondValue = submittedHeight.text!
+        //let calculatedArea = Int(firstValue)! * 0.5 * Int(submittedHeight)!
+        //Testing purposes
+        //print("The area is \(calculatedArea)")
     }
     
     
